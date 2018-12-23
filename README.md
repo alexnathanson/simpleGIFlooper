@@ -15,7 +15,7 @@
 
 ### Miscelanous commands
 Play a video
-* omxplayer <file>
+* omxplayer FILE_NAME
   
 Loop a single video
-* omxplayer --loop '<file>'
+* omxplayer --loop FILE_NAME
