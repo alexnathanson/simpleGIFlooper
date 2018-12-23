@@ -1,1 +1,1 @@
-# simpleGIFlooper
+# Simple GIF Looper
