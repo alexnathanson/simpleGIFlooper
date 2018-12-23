@@ -1,6 +1,7 @@
 # Simple GIF Looper
 
 ## Setup
+* sudo apt-get install libdbus-1-dev
 * pip install omxplayer
 * pip install omxplayer-wrapper
 
