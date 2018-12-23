@@ -1,20 +1,17 @@
 # Simple GIF Looper
 
 ## Setup
-* sudo apt-get install libdbus-1-dev
+* sudo apt install -y libdbus-1-3 libdbus-1-dev
 * pip install omxplayer
 * pip install omxplayer-wrapper
 
 
 
-
-### not necessary...
 * sudo apt-get install imagemagick
-
 * sudo apt-get install ffmpeg
 
 
-### Miscelanous commands
+### Miscelanous OMX commands
 Play a video
 * omxplayer FILE_NAME
   
