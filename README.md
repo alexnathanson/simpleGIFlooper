@@ -18,4 +18,4 @@ Play a video
 * omxplayer <file>
   
 Loop a single video
-* omxplayer --loop <file>
+* omxplayer --loop '<file>'
