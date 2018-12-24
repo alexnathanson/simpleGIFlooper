@@ -12,11 +12,3 @@
 
 * sudo apt-get install imagemagick
 * sudo apt-get install ffmpeg
-
-
-### Miscelanous OMX commands
-Play a video
-* omxplayer FILE_NAME
-  
-Loop a single video
-* omxplayer --loop FILE_NAME
