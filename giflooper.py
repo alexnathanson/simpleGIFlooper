@@ -25,14 +25,17 @@ print(vids)
 #loop all videos in the folder
 
 myPath = folder + vids[0]
-player = OMXPlayer(myPath, args=['--layer',layer,'--blank'])
+player = OMXPlayer(myPath, args=['--blank','--loop'])
 
 while True:
 	for v in range(len(vids)):
 		myPath = folder + vids[v]
 		player.load(myPath)
+		sleep(20)
+'''
 		while True:
 			try:
 				player.is_playing()
 			except:
 				break;
+'''
