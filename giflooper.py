@@ -4,14 +4,14 @@ import os
 from os import system
 from os import listdir
 from omxplayer.player import OMXPlayer
-from pathlib import path
+from pathlib import Path
 from time import sleep
 
-folder = 'media'
+folder = 'media/'
 
 vidType = 'mp4'
 
-files = os.listdir(path)
+files = os.listdir(folder)
 
 vids = []
 
@@ -24,19 +24,15 @@ print(vids)
 
 #loop all videos in the folder
 
+myPath = folder + vids[0]
+player = OMXPlayer(myPath, args=['--layer',layer,'--blank'])
+
 while True:
 	for v in range(len(vids)):
-		myPath = folder + vides[v]
-		if v% 2 == 0:
-			layer = 1
-		else:
-			layer = 2
-		print layer
-		player = OMXPlayer(myPath, args=['--layer',layer,'--blank'])
-		#print(player.isplayer())
-		tryThis= True
-		while tryThis:
+		myPath = folder + vids[v]
+		player.load(myPath)
+		while True:
 			try:
 				player.is_playing()
 			except:
-				tryThis=False
+				break;
